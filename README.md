@@ -1,4 +1,4 @@
-create some test pages for fonts
+create some test pages for fonts!
 
 * google lato v13
 * google lato v24
