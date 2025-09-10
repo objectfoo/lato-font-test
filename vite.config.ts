@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-	base: "lato-font-test",
+	base: "/lato-font-test",
   plugins: [react()],
 	build: {
 		rollupOptions: {

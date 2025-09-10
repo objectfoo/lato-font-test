@@ -69,4 +69,12 @@ How many bytes for All the glyphs
 How do we optimize a subset of a font face for different locales, or even just break up the font into faces based on their usage, most-used, sometimes-used, cyrillic languages etc.
 
 > https://web.dev/learn/performance/optimize-web-fonts#subset_your_web_fonts
+> https://drafts.csswg.org/css-fonts/#composite-fonts
 
+---
+
+What characters go with what languages or whatever?
+
+> no idea - maybe this https://graphemica.com/blocks
+
+---

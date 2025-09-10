@@ -10,31 +10,10 @@
 .f-lato {
 	font-family: Lato, "Courier New", serif;
 }
-
-.w-300 {
-	font-weight: 300;
-}
-
-.w-400 {
-	font-weight: 400;
-}
-
-.w-700 {
-	font-weight: 700;
-}
-
-.w-900 {
-	font-weight: 900;
-}
-
-.s-12 {
-	font-size: 12px;
-}
-
-.s-16 {
-	font-size: 16px;
-}
-
-.s-24 {
-	font-size: 24px;
+.note {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: center;
+	min-width: 600;
 }
