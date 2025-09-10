@@ -1,48 +1,65 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="UTF-8" />
-		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Lato</title>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap" rel="stylesheet">
-		<style>
-			.nav {
-				font-family: "Open Sans", sans-serif;
-				font-optical-sizing: auto;
-				font-weight: 400;
-				font-style: normal;
-				font-variation-settings: "wdth" 100;
-				margin-bottom: 2rem;
-			}
+<head>
+	<meta charset="UTF-8" />
+	<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Google Lato v13 - regular</title>
+	<style>
+		@font-face {
+			font-family: "lato";
+			font-style: normal;
+			font-weight: 300;
+			src: local("lato light"),
+				local("lato-light"),
+				url("/lato-google-13/lato-v13-latin-300.woff2") format("woff2"),
+				url("/lato-google-13/lato-v13-latin-300.woff") format("woff");
+		}
 
-			.open-sans-400 {
-				font-family: "Open Sans", sans-serif;
-				font-optical-sizing: auto;
-				font-weight: 400;
-				font-style: normal;
-				font-variation-settings: "wdth" 100;
-			}
+		@font-face {
+			font-family: "lato";
+			font-style: normal;
+			font-weight: 400;
+			src: local("lato regular"),
+				local("lato-regular"),
+				url("/lato-google-13/lato-v13-latin-regular.woff2") format("woff2"),
+				url("/lato-google-13/lato-v13-latin-regular.woff") format("woff");
+		}
 
-			div[class*="open-sans"] {
-				margin: 2rem;
-				max-width: 600;
-			}
-		</style>
-	</head>
+		@font-face {
+			font-family: "lato";
+			font-style: normal;
+			font-weight: 700;
+			src: local("lato bold"),
+				local("lato-bold"),
+				url("/lato-google-13/lato-v13-latin-700.woff2") format("woff2"),
+				url("/lato-google-13/lato-v13-latin-700.woff") format("woff");
+		}
 
-	<body>
-		<div class="nav" aria-label="main nav" role="navigation">
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="lato-google-latin-v13.html">Current PHM Lato v13</a></li>
-				<li><a href="lato-google-latin-v24.html">Newest google Lato V24</a></li>
-				<li><a href="lato-latin-v2.html">Free Lato</a></li>
-			</ul>
-		</div>
-	</body>
+		@font-face {
+			font-family: "lato";
+			font-style: normal;
+			font-weight: 900;
+			src: local("lato black"),
+				local("lato-black"),
+				url("/lato-google-13/lato-v13-latin-900.woff2") format("woff2"),
+				url("/lato-google-13/lato-v13-latin-900.woff") format("woff");
+		}
+
+		:root {
+			font-family: Lato, "Courier New", Courier, monospace;
+		}
+	</style>
+</head>
+
+<body>
+	<div>
+		<p>Note: these fonts are currently in use on PHM (v13)</p>
+	</div>
+
+	<div id="root"></div>
+	<script type="module" src="/src/main.tsx"></script>
+</body>
 
 </html>
