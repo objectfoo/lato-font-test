@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Lato v2 - italic + regular</title>
+	<style>
+		/* Light 300 */
+		@font-face {
+			font-family: "Lato";
+			src: url("/lato-v2/fonts/Lato-Light.woff2") format("woff2"),
+				url("/lato-v2/fonts/Lato-Light.woff") format("woff"),
+				url("/lato-v2/fonts/Lato-Light.ttf") format("truetype");
+			font-style: normal;
+			font-weight: 300;
+			font-display: swap;
+		}
+
+		@font-face {
+			font-family: "Lato";
+			src: url("/lato-v2/fonts/Lato-LightItalic.woff2") format("woff2"),
+				url("/lato-v2/fonts/Lato-LightItalic.woff") format("woff"),
+				url("/lato-v2/fonts/Lato-LightItalic.ttf") format("truetype");
+			font-style: italic;
+			font-weight: 300;
+			font-display: swap;
+		}
+
+
+		/* Regular 400 */
+		@font-face {
+			font-family: "Lato";
+			src: url("/lato-v2/fonts/Lato-Regular.woff2") format("woff2"),
+				url("/lato-v2/fonts/Lato-Regular.woff") format("woff"),
+				url("/lato-v2/fonts/Lato-Regular.ttf") format("truetype");
+			font-style: normal;
+			font-weight: 400;
+			font-display: swap;
+		}
+
+		@font-face {
+			font-family: "Lato";
+			src: url("/lato-v2/fonts/Lato-Italic.woff2") format("woff2"),
+				url("/lato-v2/fonts/Lato-Italic.woff") format("woff"),
+				url("/lato-v2/fonts/Lato-Italic.ttf") format("truetype");
+			font-style: italic;
+			font-weight: 400;
+			font-display: swap;
+		}
+
+		/* Bold 700 */
+		@font-face {
+			font-family: "Lato";
+			src: url("/lato-v2/fonts/Lato-Bold.woff2") format("woff2"),
+				url("/lato-v2/fonts/Lato-Bold.woff") format("woff"),
+				url("/lato-v2/fonts/Lato-Bold.ttf") format("truetype");
+			font-style: normal;
+			font-weight: 700;
+			font-display: swap;
+		}
+
+		@font-face {
+			font-family: "Lato";
+			src: url("/lato-v2/fonts/Lato-BoldItalic.woff2") format("woff2"),
+				url("/lato-v2/fonts/Lato-BoldItalic.woff") format("woff"),
+				url("/lato-v2/fonts/Lato-BoldItalic.ttf") format("truetype");
+			font-style: italic;
+			font-weight: 700;
+			font-display: swap;
+		}
+
+		/* Black 900 */
+		@font-face {
+			font-family: "Lato";
+			src: url("/lato-v2/fonts/Lato-Black.woff2") format("woff2"),
+				url("/lato-v2/fonts/Lato-Black.woff") format("woff"),
+				url("/lato-v2/fonts/Lato-Black.ttf") format("truetype");
+			font-style: normal;
+			font-weight: 900;
+			font-display: swap;
+		}
+
+		@font-face {
+			font-family: "Lato";
+			src: url("/lato-v2/fonts/Lato-BlackItalic.woff2") format("woff2"),
+				url("/lato-v2/fonts/Lato-BlackItalic.woff") format("woff"),
+				url("/lato-v2/fonts/Lato-BlackItalic.ttf") format("truetype");
+			font-style: italic;
+			font-weight: 900;
+			font-display: swap;
+		}
+
+
+
+		:root {
+			font-family: Lato, "Courier New", Courier, monospace;
+		}
+	</style>
+</head>
+
+<body>
+	<div>
+		<p>Note: Free lato regular faces only (fake italics)</p>
+	</div>
+
+	<div id="root"></div>
+	<script type="module" src="/src/main.tsx"></script>
+</body>
+
+</html>

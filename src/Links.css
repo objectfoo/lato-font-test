@@ -1,0 +1,18 @@
+ul.nav {
+	display: inline-flex;
+	gap: 16px;
+	list-style-type: none;
+	padding-left: 0;
+}
+
+ul.nav a {
+	font-size: 14px;
+	text-decoration: none;
+	color: #3557FF;
+}
+
+ul.nav a:hover,
+ul.nav a:focus-visible {
+	text-decoration: underline;
+}
+

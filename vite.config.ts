@@ -8,9 +8,11 @@ export default defineConfig({
 		rollupOptions: {
 			input: {
 				main: "index.html",
-				"lato-google-latin-v13": "lato-google-latin-v13.html",
-				"lato-google-latin-v24": "lato-google-latin-v24.html",
-				"lato-latin-v2": "lato-latin-v2.html",
+				"sample-google-latin-v24": "sample-google-latin-v24.html",
+				"sample-lato-latin-regular-italic": "sample-lato-latin-regular-italic.html",
+				"sample-lato-latin-regular": "sample-lato-latin-regular.html",
+				"sample-lato-regular-italic": "sample-lato-regular-italic.html",
+				"sample-lato-regular": "sample-lato-regular.html",
 			}
 		}
 	}
