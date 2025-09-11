@@ -7,9 +7,6 @@
 	font-style: italic;
 }
 
-.f-lato {
-	font-family: Lato, "Courier New", serif;
-}
 .note {
 	max-width: 1280px;
 	margin: 2rem;
@@ -18,4 +15,8 @@
 	flex-wrap: nowrap;
 	align-items: center;
 	min-width: 600;
+}
+
+.sample-block p {
+	margin: 0px 0px 16px 0px;
 }
