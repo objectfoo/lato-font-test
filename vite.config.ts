@@ -9,11 +9,14 @@ export default defineConfig({
 		rollupOptions: {
 			input: {
 				main: "index.html",
+				"sample-google-latin-v13": "sample-google-latin-v13.html",
 				"sample-google-latin-v24": "sample-google-latin-v24.html",
-				"sample-lato-latin-regular-italic": "sample-lato-latin-regular-italic.html",
-				"sample-lato-latin-regular": "sample-lato-latin-regular.html",
-				"sample-lato-regular-italic": "sample-lato-regular-italic.html",
-				"sample-lato-regular": "sample-lato-regular.html",
+				"sample-lato-latin-upright-italic": "sample-lato-latin-upright-italic.html",
+				"sample-lato-latin-upright": "sample-lato-latin-upright.html",
+				"sample-lato-upright": "sample-lato-upright.html",
+				"sample-lato-upright-italic": "sample-lato-upright-italic.html",
+				// "sample-mui-google-lato-latin-v13": "sample-mui-google-lato-latin-v13.html",
+				// "sample-mui-lato-latin-upright-italic": "sample-mui-lato-latin-upright-italic.html",
 			}
 		}
 	}
