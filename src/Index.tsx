@@ -1,4 +1,3 @@
-import React from "react";
 import Avatar from "@mui/material/Avatar";
 import Divider from "@mui/material/Divider";
 import Link from "@mui/material/Link";
@@ -6,6 +5,8 @@ import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemAvatar from "@mui/material/ListItemAvatar";
 import ListItemText from "@mui/material/ListItemText";
+import React from "react";
+import type { Theme } from "@mui/material";
 import Typography from "@mui/material/Typography";
 
 const makePath = (fileName: string): string => `/lato-font-test/${fileName}`;
@@ -46,7 +47,6 @@ const Pages: { label: string; href: string; description?: string; avatar: "lato"
 		description: "Actual lato 2",
 		avatar: "lato"
 	},
-	/*
 	{
 		label: "Mui + Google Lato Latin v13",
 		href: makePath("sample-mui-google-lato-latin-v13.html"),
@@ -55,31 +55,34 @@ const Pages: { label: string; href: string; description?: string; avatar: "lato"
 	},
 	{
 		label: "Mui + Lato upright + italic",
-		href: makePath("sample-lato-upright-italic.html"),
+		href: makePath("sample-mui-lato-latin-upright-italic.html"),
 		description: "Mui wrapped - Actual lato 2",
 		avatar: "mui"
 	},
-	*/
 ];
 
+const setAvatarColors = (input: string) => (theme: Theme): {bgcolor: string; color: string} => ({
+	bgcolor: input,
+	color: theme.palette.getContrastText(input),
+})
 
 function FancyAvatar(props: { avatar: "lato" | "google" | "mui" }): React.ReactNode {
 	return (
 		<ListItemAvatar >
 			{props.avatar === "google"
-				? <Avatar sx={{ bgcolor: "#0f9d58", color: "#000" }}>G</Avatar>
+				? <Avatar sx={setAvatarColors("#0f9d58")}>G</Avatar>
 				: props.avatar === "lato"
-					? <Avatar sx={{ bgcolor: "grey.700", color: "#fff" }}>L</Avatar>
-					: <Avatar sx={{ bgcolor: "#3399ff", color: "#000" }}>M</Avatar>}
+					? <Avatar sx={setAvatarColors("#616161")}>L</Avatar>
+					: <Avatar sx={setAvatarColors("#3399ff")}>M</Avatar>}
 		</ListItemAvatar>
 	);
 }
 
-export function Samples(): React.ReactNode {
+export function Index(): React.ReactNode {
 	return (
-		<div>
+		<div style={{ margin: 16 }}>
 			<Typography variant="h5" component="h1">Sample Pages</Typography>
-			<List sx={{ maxWidth: 400, mt: 1 }}>
+			<List sx={{ maxWidth: 400, mt: 1, ml: 0 }}>
 				{Pages.map((props) => <SampleListItem key={props.label} {...props} />)}
 			</List>
 		</div>
@@ -97,7 +100,7 @@ interface SampleListItemProps {
 function SampleListItem({ href, label, avatar, description }: SampleListItemProps): React.ReactNode {
 	return (
 		<>
-			<ListItem key={'list-item'} alignItems="flex-start">
+			<ListItem key={'list-item'} alignItems="flex-start" disableGutters>
 				<FancyAvatar avatar={avatar} />
 				<ListItemText
 					primary={label}

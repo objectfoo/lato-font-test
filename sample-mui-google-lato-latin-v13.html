@@ -47,14 +47,54 @@
 				url("/lato-google-13/lato-v13-latin-900.woff") format("woff");
 		}
 	</style>
+
+	<style id="top-bar-css">
+		.top-bar {
+			display: flex;
+			margin-top: 8px;
+			margin-bottom: 32px;
+			align-items: center;
+			gap: 16px;
+			margin-left: 8px;
+			margin-right: 8px;
+		}
+
+		.top-bar a {
+			padding: 8px;
+			display: inline-block;
+			flex: none;
+			color: #999;
+		}
+
+		.top-bar .note {
+			flex-grow: 1;
+		}
+
+		.top-bar .note p {
+			margin: 0
+		}
+
+		#root {
+			padding: 8px;
+			min-width: 600px;
+		}
+	</style>
 </head>
 
 <body>
-	<div class="note">
-		<p>Note: these fonts are currently in use on PHM (v13)</p>
+	<div class="top-bar">
+		<a class="home-link" style="user-select: none;" aria-label="home" href="/lato-font-test/">
+			<svg style="transform: translateY(2px);" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+				<path fill="currentColor"
+					d="m13.2 3.9l6 4.5q.375.275.588.7T20 10v9q0 .825-.587 1.413T18 21H6q-.825 0-1.412-.587T4 19v-9q0-.475.213-.9t.587-.7l6-4.5q.525-.4 1.2-.4t1.2.4M12 15q1.25 0 2.125-.875T15 12t-.875-2.125T12 9t-2.125.875T9 12t.875 2.125T12 15m0-2q-.425 0-.712-.287T11 12t.288-.712T12 11t.713.288T13 12t-.288.713T12 13m0 5q-1.025 0-2 .25T8.15 19h7.7q-.875-.5-1.85-.75T12 18m-6-8v8q1.3-.975 2.825-1.487T12 16t3.175.513T18 18v-8l-6-4.5zm6 2" />
+			</svg>
+		</a>
+		<div class="note">
+			<p>@mui wrapped google lato v13 (current PHM font)</p>
+		</div>
 	</div>
 
-	<script>window.MUI = true;</script>
+	<script>window.type = "MUI";</script>
 	<div id="root"></div>
 	<script type="module" src="/src/main.tsx"></script>
 </body>

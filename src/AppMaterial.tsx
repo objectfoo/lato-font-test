@@ -1,8 +1,14 @@
-import './App.css';
-import { SampleView } from "./SampleView";
+import { CreateWhsTheme } from "./CreateWhsTheme";
+import { SampleViewMui } from "./SampleViewMui";
+import { ThemeProvider } from "@mui/material/styles";
+import CssBaseline from "@mui/material/CssBaseline";
+
 
 export function AppMaterial() {
-	return <SampleView />;
+	return (
+		<ThemeProvider theme={CreateWhsTheme()}>
+			<CssBaseline />
+			<SampleViewMui />
+		</ThemeProvider>
+	);
 }
-
-

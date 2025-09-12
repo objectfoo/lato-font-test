@@ -89,12 +89,50 @@
 			unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 		}
 	</style>
+	<style id="top-bar-css">
+		.top-bar {
+			display: flex;
+			margin-top: 8px;
+			margin-bottom: 32px;
+			align-items: center;
+			gap: 16px;
+		}
+
+		.top-bar a {
+			padding: 8px;
+			display: inline-block;
+			flex: none;
+			color: #999;
+		}
+
+		.top-bar .note {
+			flex-grow: 1;
+		}
+
+		.top-bar .note p {
+			margin: 0
+		}
+
+		#root {
+			margin: 8px;
+			min-width: 600px;
+		}
+	</style>
 </head>
 
 <body>
-	<div class="note">
-		<p>Note: these fonts loaded directly from google (v24) for comparison</p>
+	<div class="top-bar">
+		<a class="home-link" style="user-select: none;" aria-label="home" href="/lato-font-test/">
+			<svg style="transform: translateY(2px);" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+				<path fill="currentColor"
+					d="m13.2 3.9l6 4.5q.375.275.588.7T20 10v9q0 .825-.587 1.413T18 21H6q-.825 0-1.412-.587T4 19v-9q0-.475.213-.9t.587-.7l6-4.5q.525-.4 1.2-.4t1.2.4M12 15q1.25 0 2.125-.875T15 12t-.875-2.125T12 9t-2.125.875T9 12t.875 2.125T12 15m0-2q-.425 0-.712-.287T11 12t.288-.712T12 11t.713.288T13 12t-.288.713T12 13m0 5q-1.025 0-2 .25T8.15 19h7.7q-.875-.5-1.85-.75T12 18m-6-8v8q1.3-.975 2.825-1.487T12 16t3.175.513T18 18v-8l-6-4.5zm6 2" />
+			</svg>
+		</a>
+		<div class="note">
+			<p>Google lato - current google lato (v24)</p>
+		</div>
 	</div>
+
 	<div id="root"></div>
 	<script type="module" src="/src/main.tsx"></script>
 </body>

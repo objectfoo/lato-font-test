@@ -15,8 +15,8 @@ export default defineConfig({
 				"sample-lato-latin-upright": "sample-lato-latin-upright.html",
 				"sample-lato-upright": "sample-lato-upright.html",
 				"sample-lato-upright-italic": "sample-lato-upright-italic.html",
-				// "sample-mui-google-lato-latin-v13": "sample-mui-google-lato-latin-v13.html",
-				// "sample-mui-lato-latin-upright-italic": "sample-mui-lato-latin-upright-italic.html",
+				"sample-mui-google-lato-latin-v13": "sample-mui-google-lato-latin-v13.html",
+				"sample-mui-lato-latin-upright-italic": "sample-mui-lato-latin-upright-italic.html",
 			}
 		}
 	}
