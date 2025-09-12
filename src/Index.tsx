@@ -47,6 +47,7 @@ const Pages: { label: string; href: string; description?: string; avatar: "lato"
 		description: "Actual lato 2",
 		avatar: "lato"
 	},
+
 	{
 		label: "Mui + Google Lato Latin v13",
 		href: makePath("sample-mui-google-lato-latin-v13.html"),
@@ -54,8 +55,14 @@ const Pages: { label: string; href: string; description?: string; avatar: "lato"
 		avatar: "mui"
 	},
 	{
-		label: "Mui + Lato upright + italic",
-		href: makePath("sample-mui-lato-latin-upright-italic.html"),
+		label: "Lato Latin Optimized",
+		href: makePath("sample-mui-lato-latin-optimized.html"),
+		description: "Mui wrapped - Actual lato latin 2",
+		avatar: "mui"
+	},
+	{
+		label: "Lato Optimized",
+		href: makePath("sample-mui-lato-optimized.html"),
 		description: "Mui wrapped - Actual lato 2",
 		avatar: "mui"
 	},

@@ -5,9 +5,8 @@
 	<meta charset="UTF-8" />
 	<link rel="icon" type="image/svg+xml" href="/vite.svg" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>@mui + Lato v2 - italic + regular</title>
+	<title>@mui + Optimized - Lato 2 - upright + italic</title>
 	<style>
-		/* Light 300 */
 		@font-face {
 			font-family: "Lato";
 			src: url("/lato-v2/fonts/Lato-Light.woff2") format("woff2"),
@@ -17,7 +16,6 @@
 			font-weight: 300;
 			font-display: swap;
 		}
-
 		@font-face {
 			font-family: "Lato";
 			src: url("/lato-v2/fonts/Lato-LightItalic.woff2") format("woff2"),
@@ -29,7 +27,6 @@
 		}
 
 
-		/* Regular 400 */
 		@font-face {
 			font-family: "Lato";
 			src: url("/lato-v2/fonts/Lato-Regular.woff2") format("woff2"),
@@ -39,7 +36,6 @@
 			font-weight: 400;
 			font-display: swap;
 		}
-
 		@font-face {
 			font-family: "Lato";
 			src: url("/lato-v2/fonts/Lato-Italic.woff2") format("woff2"),
@@ -50,7 +46,23 @@
 			font-display: swap;
 		}
 
-		/* Bold 700 */
+		@font-face {
+			font-family: "Lato";
+			src: url("/lato-v2/fonts/Lato-Semibold.woff2") format("woff2"),
+				url("/lato-v2/fonts/Lato-Semibold.woff") format("woff"),
+				url("/lato-v2/fonts/Lato-Semibold.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+		}
+		@font-face {
+			font-family: "Lato";
+			src: url("/lato-v2/fonts/Lato-SemiboldItalic.woff2") format("woff2"),
+				url("/lato-v2/fonts/Lato-SemiboldItalic.woff") format("woff"),
+				url("/lato-v2/fonts/Lato-SemiboldItalic.ttf") format("truetype");
+			font-style: italic;
+			font-weight: normal;
+		}
+
 		@font-face {
 			font-family: "Lato";
 			src: url("/lato-v2/fonts/Lato-Bold.woff2") format("woff2"),
@@ -60,7 +72,6 @@
 			font-weight: 700;
 			font-display: swap;
 		}
-
 		@font-face {
 			font-family: "Lato";
 			src: url("/lato-v2/fonts/Lato-BoldItalic.woff2") format("woff2"),
@@ -71,7 +82,6 @@
 			font-display: swap;
 		}
 
-		/* Black 900 */
 		@font-face {
 			font-family: "Lato";
 			src: url("/lato-v2/fonts/Lato-Black.woff2") format("woff2"),
@@ -81,7 +91,6 @@
 			font-weight: 900;
 			font-display: swap;
 		}
-
 		@font-face {
 			font-family: "Lato";
 			src: url("/lato-v2/fonts/Lato-BlackItalic.woff2") format("woff2"),
@@ -91,40 +100,17 @@
 			font-weight: 900;
 			font-display: swap;
 		}
-	</style>
 
-	<style id="top-bar-css">
-		.top-bar {
-			display: flex;
-			margin-top: 8px;
-			margin-bottom: 32px;
-			align-items: center;
-			gap: 16px;
-			margin-left: 8px;
-			margin-right: 8px;
-		}
-
-		.top-bar a {
-			padding: 8px;
-			display: inline-block;
-			flex: none;
-			color: #999;
-		}
-
-		.top-bar .note {
-			flex-grow: 1;
-		}
-
-		.top-bar .note p {
-			margin: 0
+		:root {
+			font-family: Lato, system-ui, "Segoe UI", "Tahoma", Helvetica, Arial, sans-serif;
 		}
 
 		#root {
-			padding: 8px;
+			margin: 8px;
 			min-width: 600px;
 		}
-
 	</style>
+	<link rel="stylesheet" href="/top-bar.css">
 </head>
 
 <body>
@@ -136,12 +122,12 @@
 			</svg>
 		</a>
 		<div class="note">
-			<p>@mui wrapped Free lato regular + italic faces</p>
+			<p>@mui + Optimized - Lato 2 - upright + italic</p>
 		</div>
 	</div>
 
 
-	<script>window.type = "MUI";</script>
+	<script>window.type = "OPTIMIZED";</script>
 	<div id="root"></div>
 	<script type="module" src="/src/main.tsx"></script>
 </body>

@@ -28,3 +28,11 @@ This optimized latin only glyph files are about 24k per face, we are using 4 fac
 * 900 (lato-black)
 
 Current font face definitions [google-lato-latin-v13](https://github.com/objectfoo/lato-font-test/blob/main/index.html#L10-L48)
+
+
+# Fallback Font
+
+We may be able to change the fallback font to something that looks better, this will also help for those characters that lato still does not include.
+
+`Courier New` actually look better for turkish but still looks wrong. `system-ui` - on windows 11 this is `Segoe UI` and it looks much better than arial along side `Lato`.
+

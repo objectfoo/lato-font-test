@@ -7,6 +7,7 @@ type CreateThemeOptions = {
 	tonalOffset?: PaletteOptions["tonalOffset"];
 	contrastThreshold?: PaletteOptions["contrastThreshold"];
 	htmlFontSize?: TypographyVariantsOptions["htmlFontSize"];
+	fontFamily?: "STD" | "ALTERNATE";
 };
 
 export function CreateWhsTheme(options: CreateThemeOptions = {}): ReturnType<typeof createTheme> {
@@ -19,6 +20,7 @@ export function CreateWhsTheme(options: CreateThemeOptions = {}): ReturnType<typ
 
 function CreatePalette(options: CreateThemeOptions = {}): ThemeOptions["palette"] {
 	const lightMode = (options.mode ?? "light") === "light";
+
 	return {
 		mode: lightMode ? "light" : "dark",
 		contrastThreshold: options.contrastThreshold ?? 3,
@@ -60,13 +62,13 @@ function CreateComponents(): ThemeOptions["components"] {
 	}
 }
 
-
 const fontFamily = ["Lato", "Helvetica", "Arial", "sans-serif"].join(", ");
+const alternateFontFamily = ["Lato", "system-ui", "Segoe UI", "Tahoma", "sans-serif"].join(", ");
 
 function CreateTypography(options: CreateThemeOptions = {}): ThemeOptions["typography"] {
 	return {
 		htmlFontSize: options.htmlFontSize ?? 16,
-		fontFamily,
+		fontFamily: options.fontFamily === "ALTERNATE" ? alternateFontFamily : fontFamily,
 		fontSize: 14,
 		fontWeightLight: 300,
 		fontWeightRegular: 400,

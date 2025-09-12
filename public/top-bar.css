@@ -1,0 +1,30 @@
+.top-bar {
+	display: flex;
+	margin-top: 8px;
+	margin-bottom: 32px;
+	align-items: center;
+	gap: 16px;
+	margin-left: 8px;
+	margin-right: 8px;
+}
+
+.top-bar a {
+	padding: 8px;
+	display: inline-block;
+	flex: none;
+	color: #999;
+}
+
+.top-bar .note {
+	flex-grow: 1;
+}
+
+.top-bar .note p {
+	margin: 0
+}
+
+#root {
+	padding: 8px;
+	min-width: 600px;
+}
+

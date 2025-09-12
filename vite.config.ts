@@ -11,12 +11,16 @@ export default defineConfig({
 				main: "index.html",
 				"sample-google-latin-v13": "sample-google-latin-v13.html",
 				"sample-google-latin-v24": "sample-google-latin-v24.html",
+
 				"sample-lato-latin-upright-italic": "sample-lato-latin-upright-italic.html",
 				"sample-lato-latin-upright": "sample-lato-latin-upright.html",
-				"sample-lato-upright": "sample-lato-upright.html",
+
 				"sample-lato-upright-italic": "sample-lato-upright-italic.html",
+				"sample-lato-upright": "sample-lato-upright.html",
+
 				"sample-mui-google-lato-latin-v13": "sample-mui-google-lato-latin-v13.html",
-				"sample-mui-lato-latin-upright-italic": "sample-mui-lato-latin-upright-italic.html",
+				"sample-mui-lato-latin-optimized": "sample-mui-lato-latin-optimized.html",
+				"sample-mui-lato-optimized": "sample-mui-lato-optimized.html",
 			}
 		}
 	}
