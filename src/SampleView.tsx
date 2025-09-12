@@ -1,14 +1,13 @@
 import { useState } from "react";
+import "./SampleView.css";
 
-export function SampleView(_: { mui?: boolean; }) {
-	const [size, setSize] = useState(14);
+export function SampleView() {
+	const [size, setSize] = useState(16);
 	return (
 		<div style={{
 			display: "flex",
 			flexDirection: "column",
 			flexWrap: "nowrap",
-			alignItems: "center",
-			minWidth: 600,
 		}}>
 			<div style={{ marginBottom: "16px" }}>
 				<input
@@ -32,14 +31,14 @@ export function SampleView(_: { mui?: boolean; }) {
 
 function SampleBlock(props: { size: number, weight: number; }): React.ReactNode {
 	const sizeWeight: React.CSSProperties = {
-		fontSize: props.size,
-		fontWeight: props.weight,
+		fontSize: Math.max(0, Math.min(96, props.size)),
+		fontWeight: Math.max(300, Math.min(900, props.weight)),
 	};
 	return (
 		<div className="sample-block" style={{
 			display: "inline-flex",
 			flexDirection: "column",
-			width: 600,
+			width: props.size < 22 ? 600 : "auto",
 			marginBottom: 16,
 			padding: 8,
 			border: `1px solid #bababa`,
@@ -62,10 +61,6 @@ function SampleBlock(props: { size: number, weight: number; }): React.ReactNode 
 
 			<div style={{ marginTop: 16, ...sizeWeight }}>
 				<div style={{ fontSize: 36, letterSpacing: "-.13px", lineHeight: 1.2, ...sizeWeight }}>Şifrenizi Güncelleyin</div>
-			</div>
-			<div style={{ marginTop: 16, ...sizeWeight }}>
-				<p>Sezgin Ataç (born 21 March 1998)[1] is a Turkish long-distance runner. He competed in the men's race at the 2020 World Athletics Half Marathon Championships held in Gdynia, Poland.[2]</p>
-				<p>In 2019, he competed in the men's event at the 2019 European 10,000m Cup held in London, United Kingdom. In the same year, he finished in 17th place in the men's 10,000 metres event at the 2019 European Athletics U23 Championships held in Gävle, Sweden.[3]</p>
 			</div>
 		</div>
 	);
